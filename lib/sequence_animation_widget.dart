@@ -67,6 +67,7 @@ class SequenceAnimationWidgetState extends State<SequenceAnimationWidget>
 
   @override
   void dispose() {
+    _controller.dispose();
     super.dispose();
   }
 }

@@ -1,3 +1,5 @@
+import 'package:animation_tests/animated_container.dart';
+import 'package:animation_tests/animated_crossfade.dart';
 import 'package:animation_tests/delay_animation_widget.dart';
 import 'package:animation_tests/easing_animation_widget.dart';
 import 'package:animation_tests/heart_animation_Widget.dart';
@@ -130,6 +132,28 @@ class _MyHomePageState extends State<MyHomePage> {
                   context,
                   MaterialPageRoute(
                       builder: (context) => TrainHoppingAnimationWidget()),
+                );
+              },
+            ),
+            new ListTile(
+              title: Text("Animated container "),
+              subtitle: Text("An example of an animated container."),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => AnimatedContainerWidget()),
+                );
+              },
+            ),
+            new ListTile(
+              title: Text("Animated CrossFade "),
+              subtitle: Text("An example of an animated CrossFade."),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => AnimatedCrossFadeWidget()),
                 );
               },
             ),

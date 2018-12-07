@@ -76,7 +76,7 @@ class HeartAnimationWidgetState extends State<HeartAnimationWidget>
 
     _waveEffectSizeAnimation = new CombinedAnimation([
       AnimationStep(
-          begin: 110.0
+          begin: 110.0,
           end: 220.0,
           curve: Curves.easeInOut,
           intervalStart: 0.3,
