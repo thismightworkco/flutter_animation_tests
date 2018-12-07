@@ -16,7 +16,6 @@ class EasingAnimationWidgetState extends State<EasingAnimationWidget>
 
     void handler(status) {
       if (status == AnimationStatus.completed) {
-        print("completed");
         _animation.removeStatusListener(handler);
         _controller.reset();
         _animation = Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
@@ -49,7 +48,6 @@ class EasingAnimationWidgetState extends State<EasingAnimationWidget>
     return AnimatedBuilder(
       animation: _controller,
       builder: (BuildContext context, Widget child) {
-        print(_animation.value);
         return Scaffold(
           body: Center(
             child: Transform(

@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             new ListTile(
               title: Text("Easing animation"),
-              subtitle: Text("An example of a simple easing animation."),
+              subtitle: Text("A simple easing animation."),
               onTap: () {
                 Navigator.of(context).push(new PageRouteBuilder(
                     opaque: true,
@@ -65,7 +65,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             new ListTile(
               title: Text("Delayed animation"),
-              subtitle: Text("An example a delayed animation."),
+              subtitle:
+                  Text("A delayed animation, with custom page transition"),
               onTap: () {
                 Navigator.of(context).push(new PageRouteBuilder(
                     opaque: true,
@@ -85,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             new ListTile(
               title: Text("Hart animation"),
-              subtitle: Text("An example a hart animation."),
+              subtitle: Text("A more complex micro-animation."),
               onTap: () {
                 Navigator.push(
                   context,
@@ -96,7 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             new ListTile(
               title: Text("Transition animation"),
-              subtitle: Text("An example of a transition animation."),
+              subtitle: Text(
+                  "A scale transition animation, with custom page transition"),
               onTap: () {
                 Navigator.of(context).push(new PageRouteBuilder(
                     opaque: true,
@@ -115,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             new ListTile(
               title: Text("Sequence animation"),
-              subtitle: Text("An example of a sequenced animation."),
+              subtitle: Text("A sequenced animation."),
               onTap: () {
                 Navigator.push(
                   context,

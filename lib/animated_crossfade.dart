@@ -25,7 +25,7 @@ class AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
           children: [
             AnimatedCrossFade(
               crossFadeState: _fadeState,
-              duration: new Duration(milliseconds: 600),
+              duration: new Duration(milliseconds: 1000),
               firstCurve: Curves.easeInOut,
               secondCurve: Curves.easeInOut,
               firstChild: Center(

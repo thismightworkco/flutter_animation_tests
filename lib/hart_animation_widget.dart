@@ -111,7 +111,7 @@ class _HartAnimationWidgetState extends State<HartAnimationWidget>
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("Sequenced Animation"),
+        title: new Text("Micro-Interaction animation"),
       ),
       backgroundColor: Colors.white,
       body: GestureDetector(
