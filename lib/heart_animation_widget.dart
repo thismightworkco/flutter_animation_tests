@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class HartAnimationWidget extends StatefulWidget {
+class HeartAnimationWidget extends StatefulWidget {
   @override
-  _HartAnimationWidgetState createState() => new _HartAnimationWidgetState();
+  _HeartAnimationWidgetState createState() => new _HeartAnimationWidgetState();
 }
 
 // Add with TickerProviderStateMixin
-class _HartAnimationWidgetState extends State<HartAnimationWidget>
+class _HeartAnimationWidgetState extends State<HeartAnimationWidget>
     with TickerProviderStateMixin {
   // Define the _controller variable
   AnimationController _controller;

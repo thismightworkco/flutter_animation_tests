@@ -19,7 +19,7 @@ class AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             new AnimatedContainer(
               duration: new Duration(milliseconds: 1000),

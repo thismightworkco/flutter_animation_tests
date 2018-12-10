@@ -1,8 +1,9 @@
 import 'package:animation_tests/animated_container.dart';
 import 'package:animation_tests/animated_crossfade.dart';
+import 'package:animation_tests/animation_inside.dart';
 import 'package:animation_tests/delay_animation_widget.dart';
 import 'package:animation_tests/easing_animation_widget.dart';
-import 'package:animation_tests/hart_animation_widget.dart';
+import 'package:animation_tests/heart_animation_widget.dart';
 import 'package:animation_tests/sequence_animation_widget.dart';
 import 'package:animation_tests/train_hopping_widget.dart';
 import 'package:animation_tests/transition_test.dart';
@@ -85,13 +86,13 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             new ListTile(
-              title: Text("Hart animation"),
+              title: Text("Heart animation"),
               subtitle: Text("A more complex micro-animation."),
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => HartAnimationWidget()),
+                      builder: (context) => HeartAnimationWidget()),
                 );
               },
             ),
@@ -156,6 +157,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   context,
                   MaterialPageRoute(
                       builder: (context) => AnimatedCrossFadeWidget()),
+                );
+              },
+            ),
+            new ListTile(
+              title: Text("Animation Inside!"),
+              subtitle: Text("A small SlideTransition"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => AnimationInsideWidget()),
                 );
               },
             ),

@@ -21,7 +21,7 @@ class AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             AnimatedCrossFade(
               crossFadeState: _fadeState,
