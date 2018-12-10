@@ -112,9 +112,6 @@ class _HeartAnimationWidgetState extends State<HeartAnimationWidget>
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text("Micro-Interaction animation"),
-      ),
       backgroundColor: Colors.white,
       body: GestureDetector(
         onTap: () {
@@ -191,6 +188,11 @@ class _HeartAnimationWidgetState extends State<HeartAnimationWidget>
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          }),
     );
   }
 }
