@@ -11,7 +11,6 @@ class AnimatedCrossFadeWidgetState extends State<AnimatedCrossFadeWidget> {
     super.initState();
   }
 
-  Color _color = Colors.lightGreen;
   double _size = 200.0;
 
   CrossFadeState _fadeState = CrossFadeState.showFirst;

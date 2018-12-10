@@ -7,7 +7,9 @@ class HeartAnimationWidget extends StatefulWidget {
 
 // Add with TickerProviderStateMixin
 class _HeartAnimationWidgetState extends State<HeartAnimationWidget>
-    with TickerProviderStateMixin {
+    with SingleTickerProviderStateMixin {
+
+
   // Define the _controller variable
   AnimationController _controller;
 
