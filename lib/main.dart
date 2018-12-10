@@ -35,57 +35,59 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(widget.title),
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 0.0,
+        backgroundColor: Colors.white,
+        title: Image.asset("images/flutter-belgium.png"),
       ),
-      body: new Center(
-        child: new ListView(
+      body: Center(
+        child: ListView(
           children: <Widget>[
-            new ListTile(
+            ListTile(
               title: Text("Easing animation"),
               subtitle: Text("A simple easing animation."),
               onTap: () {
-                Navigator.of(context).push(new PageRouteBuilder(
+                Navigator.of(context).push( PageRouteBuilder(
                     opaque: true,
-                    transitionDuration: new Duration(seconds: 1),
+                    transitionDuration:  Duration(seconds: 1),
                     pageBuilder:
                         (BuildContext content, Animation _, Animation __) {
-                      return new EasingAnimationWidget();
+                      return EasingAnimationWidget();
                     },
                     transitionsBuilder: (BuildContext context,
                         Animation<double> animation,
                         Animation<double> _,
                         Widget child) {
-                      return new FadeTransition(
+                      return FadeTransition(
                         opacity: animation,
                         child: child,
                       );
                     }));
               },
             ),
-            new ListTile(
+            ListTile(
               title: Text("Delayed animation"),
               subtitle:
                   Text("A delayed animation, with custom page transition"),
               onTap: () {
-                Navigator.of(context).push(new PageRouteBuilder(
+                Navigator.of(context).push(PageRouteBuilder(
                     opaque: true,
-                    transitionDuration: new Duration(seconds: 1),
+                    transitionDuration: Duration(seconds: 1),
                     pageBuilder: (BuildContext content, Animation _,
                         Animation secondAnimation) {
-                      return new DelayAnimationWidget();
+                      return DelayAnimationWidget();
                     },
                     transitionsBuilder: (BuildContext context,
                         Animation<double> animation,
                         Animation<double> secondAnimation,
                         Widget child) {
-                      return new FadeTransition(
+                      return FadeTransition(
                           opacity: animation, child: child);
                     }));
               },
             ),
-            new ListTile(
+            ListTile(
               title: Text("Heart animation"),
               subtitle: Text("A more complex micro-animation."),
               onTap: () {
@@ -96,17 +98,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
             ),
-            new ListTile(
+            ListTile(
               title: Text("Transition animation"),
               subtitle: Text(
                   "A scale transition animation, with custom page transition"),
               onTap: () {
-                Navigator.of(context).push(new PageRouteBuilder(
+                Navigator.of(context).push(PageRouteBuilder(
                     opaque: true,
-                    transitionDuration: new Duration(seconds: 1),
+                    transitionDuration: Duration(seconds: 1),
                     pageBuilder: (BuildContext content, Animation priman,
                         Animation secondAnimation) {
-                      return new TransitionAnimationWidget(priman);
+                      return TransitionAnimationWidget(priman);
                     },
                     transitionsBuilder: (BuildContext context,
                         Animation<double> animation,
@@ -116,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     }));
               },
             ),
-            new ListTile(
+            ListTile(
               title: Text("Sequence animation"),
               subtitle: Text("A sequenced animation."),
               onTap: () {
@@ -127,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
             ),
-            new ListTile(
+            ListTile(
               title: Text("Trainhopping animation"),
               subtitle: Text("An example of a trainhopping animation."),
               onTap: () {
@@ -138,7 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
             ),
-            new ListTile(
+            ListTile(
               title: Text("Animated container "),
               subtitle: Text("An example of an animated container."),
               onTap: () {
@@ -149,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
             ),
-            new ListTile(
+            ListTile(
               title: Text("Animated CrossFade "),
               subtitle: Text("An example of an animated CrossFade."),
               onTap: () {
@@ -160,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
             ),
-            new ListTile(
+            ListTile(
               title: Text("Animation Inside!"),
               subtitle: Text("A small SlideTransition"),
               onTap: () {
