@@ -41,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.white,
         title: Image.asset("images/flutter-belgium.png"),
       ),
+      backgroundColor: Colors.white,
       body: Center(
         child: ListView(
           children: <Widget>[
