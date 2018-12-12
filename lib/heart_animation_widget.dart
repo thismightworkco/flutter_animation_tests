@@ -8,8 +8,6 @@ class HeartAnimationWidget extends StatefulWidget {
 // Add with TickerProviderStateMixin
 class _HeartAnimationWidgetState extends State<HeartAnimationWidget>
     with SingleTickerProviderStateMixin {
-
-
   // Define the _controller variable
   AnimationController _controller;
 
@@ -23,6 +21,8 @@ class _HeartAnimationWidgetState extends State<HeartAnimationWidget>
   // Add the initState method to initialize the AnimationController
   @override
   void initState() {
+    super.initState();
+
     // As the class itself is the TickerProvider we can pass this in the vsync argument
     _controller =
         AnimationController(vsync: this, duration: new Duration(seconds: 2));
@@ -97,8 +97,6 @@ class _HeartAnimationWidgetState extends State<HeartAnimationWidget>
         curve: Interval(0.2, 0.7, curve: Curves.easeInOut),
       ),
     );
-
-    super.initState();
   }
 
   // Don't forget to always dispose an AnimationController

@@ -49,9 +49,9 @@ class _MyHomePageState extends State<MyHomePage> {
               title: Text("Easing animation"),
               subtitle: Text("A simple easing animation."),
               onTap: () {
-                Navigator.of(context).push( PageRouteBuilder(
+                Navigator.of(context).push(PageRouteBuilder(
                     opaque: true,
-                    transitionDuration:  Duration(seconds: 1),
+                    transitionDuration: Duration(seconds: 1),
                     pageBuilder:
                         (BuildContext content, Animation _, Animation __) {
                       return EasingAnimationWidget();
@@ -83,8 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Animation<double> animation,
                         Animation<double> secondAnimation,
                         Widget child) {
-                      return FadeTransition(
-                          opacity: animation, child: child);
+                      return FadeTransition(opacity: animation, child: child);
                     }));
               },
             ),
@@ -107,9 +106,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.of(context).push(PageRouteBuilder(
                     opaque: true,
                     transitionDuration: Duration(seconds: 1),
-                    pageBuilder: (BuildContext content, Animation priman,
+                    pageBuilder: (BuildContext content, Animation primary,
                         Animation secondAnimation) {
-                      return TransitionAnimationWidget(priman);
+                      return TransitionAnimationWidget(primary);
                     },
                     transitionsBuilder: (BuildContext context,
                         Animation<double> animation,

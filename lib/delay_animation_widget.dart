@@ -10,7 +10,6 @@ class DelayAnimationWidgetState extends State<DelayAnimationWidget>
   AnimationController _controller;
   Animation _animation;
   Animation _lateAnimation;
-  Animation _earlyAnimation;
 
   @override
   void initState() {
@@ -40,10 +39,6 @@ class DelayAnimationWidgetState extends State<DelayAnimationWidget>
 
     _controller = new AnimationController(
         vsync: this, duration: new Duration(seconds: 2));
-
-    _earlyAnimation = new Tween(begin: -1.0, end: 0.0).animate(CurvedAnimation(
-        parent: _controller,
-        curve: Interval(1.2, 0.2, curve: Curves.fastOutSlowIn)));
 
     _animation = new Tween(begin: -1.0, end: 0.0).animate(
         CurvedAnimation(parent: _controller, curve: Curves.fastOutSlowIn))

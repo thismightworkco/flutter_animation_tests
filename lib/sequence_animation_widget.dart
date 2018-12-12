@@ -13,6 +13,8 @@ class SequenceAnimationWidgetState extends State<SequenceAnimationWidget>
 
   @override
   void initState() {
+    super.initState();
+
     _controller = new AnimationController(
         vsync: this, duration: new Duration(seconds: 2));
 
@@ -41,7 +43,6 @@ class SequenceAnimationWidgetState extends State<SequenceAnimationWidget>
     ).animate(_controller);
 
     _controller.forward();
-    super.initState();
   }
 
   @override

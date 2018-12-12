@@ -22,6 +22,8 @@ class TrainHoppingAnimationWidgetState
 
   @override
   void initState() {
+    super.initState();
+
     _controller = new AnimationController(
         vsync: this, duration: new Duration(seconds: 2));
 
@@ -39,7 +41,6 @@ class TrainHoppingAnimationWidgetState
         onSwitchedTrain: action);
 
     _controller.forward();
-    super.initState();
   }
 
   @override
@@ -67,6 +68,7 @@ class TrainHoppingAnimationWidgetState
 
   @override
   void dispose() {
+    _controller.dispose();
     super.dispose();
   }
 }
