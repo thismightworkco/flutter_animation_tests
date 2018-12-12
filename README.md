@@ -11,7 +11,9 @@ For help getting started with Flutter, view our online
 ## Sources
 
 https://flutter.io/docs/development/ui/animations/overview
+
 https://flutter.io/docs/development/ui/animations
+
 https://flutter.io/docs/development/ui/widgets/animation
 
 Like Micro Animation by Yann on principletemplates.com:
